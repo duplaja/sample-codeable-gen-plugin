@@ -31,15 +31,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-if ( ! function_exists( 'sample_prefix_codeable__enqueue_styles' ) ) {
+if ( ! function_exists( 'sample_prefix_codeable_enqueue_styles' ) ) {
 	/**
 	 * Enqueues main plugin style.
 	 *
 	 * @param
 	 * @return
 	 */
-	add_action( 'wp_enqueue_scripts', 'sample_prefix_codeable__enqueue_styles' );
-	function sample_prefix_codeable__enqueue_styles() {
+	add_action( 'wp_enqueue_scripts', 'sample_prefix_codeable_enqueue_styles' );
+	function sample_prefix_codeable_enqueue_styles() {
 		wp_enqueue_style( 'sample-codeable-gen-plugin-main-style', plugin_dir_url( __FILE__ ) . 'css/main.css', array(), '0.1' ); 
 		
 	}
@@ -47,15 +47,15 @@ if ( ! function_exists( 'sample_prefix_codeable__enqueue_styles' ) ) {
 
 
 	
-if ( ! function_exists( 'sample_prefix_codeable__enqueue_scripts' ) ) {
+if ( ! function_exists( 'sample_prefix_codeable_enqueue_scripts' ) ) {
 	/**
 	 * Enqueues main plugin script.
 	 *
 	 * @param
 	 * @return
 	 */
-	add_action( 'wp_enqueue_scripts', 'sample_prefix_codeable__enqueue_scripts' );
-	function sample_prefix_codeable__enqueue_scripts() {
+	add_action( 'wp_enqueue_scripts', 'sample_prefix_codeable_enqueue_scripts' );
+	function sample_prefix_codeable_enqueue_scripts() {
 		wp_enqueue_script( 'sample-codeable-gen-plugin-main-script', plugin_dir_url( __FILE__ ) . 'js/main.js', array(), '0.1' ); 
 		
 	}
@@ -63,15 +63,15 @@ if ( ! function_exists( 'sample_prefix_codeable__enqueue_scripts' ) ) {
 
 
 	
-if ( ! function_exists( 'sample_prefix_codeable__example_function' ) ) {
+if ( ! function_exists( 'sample_prefix_codeable_example_function' ) ) {
 	/**
 	 * Sample Function to show best practices for checking exists. Remove or modify.
 	 *
 	 * @param
 	 * @return
 	 */
-	add_action( 'wp_head', 'sample_prefix_codeable__example_function' );
-	function sample_prefix_codeable__example_function() {
+	add_action( 'wp_head', 'sample_prefix_codeable_example_function' );
+	function sample_prefix_codeable_example_function() {
 
 		echo '<!-- Pluginception Codeable SpinUp demo function is active  -->';
 		
