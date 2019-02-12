@@ -1,0 +1,1 @@
+/* Sample Generated Plugin - JS */	
